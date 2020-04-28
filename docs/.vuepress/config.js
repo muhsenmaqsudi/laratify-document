@@ -1,6 +1,7 @@
 module.exports = {
   title: "Laravel Componel",
   description: "a Laravel 7 components ui package",
+  base: "/laravel-componel/",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
