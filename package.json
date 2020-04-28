@@ -1,0 +1,31 @@
+{
+  "name": "laravel-componel",
+  "version": "1.0.0",
+  "description": "Laravel Componel Documentation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhsenmaqsudi/laravel-componel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhsenmaqsudi/laravel-componel/issues"
+  },
+  "homepage": "https://github.com/muhsenmaqsudi/laravel-componel#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
+  }
+}
