@@ -8,7 +8,9 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "predeploy": "npm run docs:build",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/muhsenmaqsudi/laravel-componel#readme",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.1",
+    "gh-pages": "^2.2.0",
     "vuepress": "^1.4.1"
   },
   "dependencies": {
