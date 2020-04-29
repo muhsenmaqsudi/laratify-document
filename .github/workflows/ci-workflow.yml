@@ -1,4 +1,4 @@
-name: VuePress Github Pages CI & CD
+name: LaravelComponel Documentation Github Page CI/CD
 on:
   push:
     branches:
