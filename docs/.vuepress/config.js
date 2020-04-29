@@ -2,20 +2,50 @@ module.exports = {
   title: "Laravel Componel",
   description: "a Laravel 7 components ui package",
   base: "/laravel-componel/",
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css",
+      },
+    ],
+  ],
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
+      { text: "Components", link: "/components/" },
       {
         text: "Github",
         link: "https://github.com/muhsenmaqsudi/laravel-componel",
       },
     ],
-    sidebar: {
-      "/guide/": ["", "installation"],
-      // fallback
-      "/": ["" /* / */],
-    },
+    sidebar: [
+      {
+        title: "Guide", // required
+        collapsable: false, // optional, defaults to true
+        children: ["/guide/", "/guide/installation"],
+      },
+      {
+        title: "Components",
+        collapsable: false, // optional, defaults to true
+        children: [
+          "/components/",
+          "/components/alert",
+          "/components/badge",
+          "/components/button",
+          "/components/input",
+          "/components/checkbox",
+          "/components/select",
+          "/components/file",
+          "/components/textarea",
+          "/components/radios",
+        ],
+      },
+    ],
+    // sidebarDepth: 2,
+    smoothScroll: true,
   },
   plugins: [
     ["vuepress-plugin-code-copy", true],
