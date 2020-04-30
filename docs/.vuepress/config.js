@@ -1,7 +1,16 @@
+const path = require("path");
+
 module.exports = {
   title: "Laravel Componel",
   description: "a Laravel 7 components ui package",
   base: "/laravel-componel/",
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "../.vuepress"),
+      },
+    },
+  },
   head: [
     [
       "link",

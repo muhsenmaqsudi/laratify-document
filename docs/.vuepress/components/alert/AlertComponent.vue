@@ -1,7 +1,7 @@
 <template>
   <div
     class="px-6 py-4 border-0 rounded relative mb-4"
-    :class="[bgColor, textColor]"
+    :class="[props[0], props[1]]"
   >
     <span class="text-xl inline-block mr-5 align-middle">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -29,7 +29,9 @@
 
 <script>
 export default {
-  props: ["bgColor", "textColor"],
+  // props[0] = "bgColor"
+  // props[1] = "textColor"
+  props: ["props"],
 };
 </script>
 
