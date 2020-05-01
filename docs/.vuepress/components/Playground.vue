@@ -6,7 +6,7 @@
           <button
             v-for="(tab, index) in tabs"
             :key="index"
-            @click="activeTab = tab"
+            @click="(activeTab = tab), $emit('active-tab', tab)"
             :class="[activeTab == tab ? activeClass : '']"
             class="text-gray-600 capitalize py-4 px-6 block hover:text-blue-500 focus:outline-none"
           >
