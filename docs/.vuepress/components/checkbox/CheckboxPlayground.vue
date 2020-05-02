@@ -3,10 +3,9 @@
     <Playground :tabs="tabs" @active-tab="selectedTab = $event">
       <template #options>
         <Toggle name="disabled" @toggle-state="disabled = $event" />
-        <Toggle name="readonly" @toggle-state="readonly = $event" />
       </template>
       <template #component>
-        <component :is="component" :props="[selectedTab, disabled, readonly]">
+        <component :is="component" :props="[selectedTab, disabled]">
         </component>
       </template>
     </Playground>
@@ -22,9 +21,8 @@ export default {
     return {
       tabs: ["normal"],
       selectedTab: "normal",
-      component: "input-InputComponent",
+      component: "checkbox-CheckboxComponent",
       disabled: false,
-      readonly: false,
     };
   },
 };

@@ -18,3 +18,5 @@ for disabling the checkbox set disabled attributes.
 ::: tip checkbox column
 checkbox attributes should have boolean migration columns.
 :::
+
+<checkbox-CheckboxPlayground />
