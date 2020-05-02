@@ -33,7 +33,7 @@
 export default {
   // props[0] = "bgColor"
   // props[1] = "btnSize"
-  // props[2] = "button type"
+  // props[2] = "button type",
   props: ["props"],
   data() {
     return {
@@ -62,14 +62,15 @@ export default {
     },
     getActivePsuedo() {
       let bgColorClass = this.props[0];
-      let shade = bgColorClass.match(/\d00/i);
-      let bg = bgColorClass.split(/\d/);
-      let activeShade = +shade[0] + 100;
-      return `active:${bg[0] + activeShade}`;
+      if (bgColorClass == "bg-white" || bgColorClass == "bg-black") {
+        return "";
+      } else {
+        let shade = bgColorClass.match(/\d00/i);
+        let bg = bgColorClass.split(/\d/);
+        let activeShade = +shade[0] + 100;
+        return `active:${bg[0] + activeShade}`;
+      }
     },
-    //     active:bg-pink-600
-    // active:bg-pink-600
-    // active:bg-pink-600
   },
 };
 </script>
