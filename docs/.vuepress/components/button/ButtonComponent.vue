@@ -1,28 +1,28 @@
 <template>
   <div>
     <button
-      class="text-white active:bg-pink-600 font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
+      class="text-white font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
       type="button"
       v-show="props[2] === 'normal'"
-      :class="[getBackgroundColor, getButtonSize]"
+      :class="[getBackgroundColor, getButtonSize, getActivePsuedo]"
     >
       {{ buttonTitle }}
     </button>
 
     <button
-      class="text-white active:bg-pink-600 font-bold uppercase px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
+      class="text-white font-bold uppercase px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
       type="button"
       v-show="props[2] === 'rounded'"
-      :class="[getBackgroundColor, getButtonSize]"
+      :class="[getBackgroundColor, getButtonSize, getActivePsuedo]"
     >
       {{ buttonTitle }}
     </button>
 
     <button
-      class="bg-transparent border border-solid hover:text-white active:bg-pink-600 font-bold uppercase px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
+      class="bg-transparent border border-solid hover:text-white font-bold uppercase px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 transition transition-all ease-in duration-75"
       type="button"
       v-show="props[2] === 'outline'"
-      :class="[getBackgroundColor, getButtonSize]"
+      :class="[getBackgroundColor, getButtonSize, getActivePsuedo]"
     >
       {{ buttonTitle }}
     </button>
@@ -60,6 +60,16 @@ export default {
         return "text-base";
       }
     },
+    getActivePsuedo() {
+      let bgColorClass = this.props[0];
+      let shade = bgColorClass.match(/\d00/i);
+      let bg = bgColorClass.split(/\d/);
+      let activeShade = +shade[0] + 100;
+      return `active:${bg[0] + activeShade}`;
+    },
+    //     active:bg-pink-600
+    // active:bg-pink-600
+    // active:bg-pink-600
   },
 };
 </script>
