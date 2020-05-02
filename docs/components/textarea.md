@@ -1,5 +1,7 @@
 # Textarea
 
+### Code
+
 ```html
 <x-componel-textarea
   name="body"

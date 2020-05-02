@@ -1,5 +1,7 @@
 # Select
 
+### Code
+
 ```html
 <x-componel-select
   name="option"

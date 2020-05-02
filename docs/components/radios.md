@@ -1,5 +1,7 @@
 # Radios
 
+### Code
+
 ```html
 <x-componel-radios
   name="option"
@@ -14,7 +16,7 @@
 :::
 
 ::: tip options with associate array
-::options="[1 => 'option1', 2 => 'option2']"
+:options="[1 => 'option1', 2 => 'option2']"
 :::
 
 ### Playground

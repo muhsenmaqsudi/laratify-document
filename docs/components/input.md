@@ -1,5 +1,7 @@
 # Input
 
+### Code
+
 ```html
 <x-componel-input
   name="email"

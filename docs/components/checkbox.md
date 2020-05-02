@@ -1,5 +1,7 @@
 # Checkbox
 
+### Code
+
 ```html
 <x-componel-checkbox
   name="terms"

@@ -1,5 +1,7 @@
 # File
 
+### Code
+
 ```html
 <x-componel-file
   name="avatar"

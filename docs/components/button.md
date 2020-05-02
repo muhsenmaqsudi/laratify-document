@@ -1,5 +1,7 @@
 # Button
 
+### Code
+
 ```html
 <x-componel-button variant="pink-500" size="lg" outline rounded>
   Button Title
