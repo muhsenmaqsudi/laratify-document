@@ -16,6 +16,8 @@ export const playground = {
         "purple",
         "pink",
       ],
+      sizes: ["sm", "md", "lg"],
+      size: "sm",
       background: "blue",
       text: "white",
       shade: "500",

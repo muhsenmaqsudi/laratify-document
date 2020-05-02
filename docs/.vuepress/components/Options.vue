@@ -10,6 +10,7 @@
         v-model="selected"
         class="block capitalize appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         @change="$emit('selected-option', selected)"
+        :class="inputClass"
       >
         <option
           v-for="option in options"
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  props: ["label", "options", "defaultOption"],
+  props: ["label", "options", "defaultOption", "inputClass"],
   // provide: {
   //   options: ["bgColor", "textColor"],
   // },
