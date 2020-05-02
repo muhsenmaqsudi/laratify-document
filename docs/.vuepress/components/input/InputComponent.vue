@@ -1,7 +1,7 @@
 <template>
   <div class="mb-3 pt-0">
     <label class="block" for="name">
-      <span class="text-gray-700">Email</span>
+      <span class="text-gray-700">Email:</span>
       <input
         type="email"
         name="email"

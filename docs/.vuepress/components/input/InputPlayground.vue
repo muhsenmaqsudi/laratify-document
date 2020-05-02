@@ -2,64 +2,15 @@
   <div>
     <Playground :tabs="tabs" @active-tab="selectedTab = $event">
       <template #options>
-        <div class="flex m-4">
-          <label for="toogleA" class="flex items-center cursor-pointer">
-            <!-- toggle -->
-            <div class="relative">
-              <!-- input -->
-              <input
-                id="toogleA"
-                type="checkbox"
-                class="hidden"
-                v-model="disabled"
-              />
-              <!-- line -->
-              <div
-                class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-              ></div>
-              <!-- dot -->
-              <div
-                class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-              ></div>
-            </div>
-            <!-- label -->
-            <div class="ml-3 text-gray-700 font-medium">
-              Disabled
-            </div>
-          </label>
-        </div>
-        <div class="flex m-4">
-          <label for="toogleB" class="flex items-center cursor-pointer">
-            <!-- toggle -->
-            <div class="relative">
-              <!-- input -->
-              <input
-                id="toogleB"
-                type="checkbox"
-                class="hidden"
-                v-model="readonly"
-              />
-              <!-- line -->
-              <div
-                class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-              ></div>
-              <!-- dot -->
-              <div
-                class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
-              ></div>
-            </div>
-            <!-- label -->
-            <div class="ml-3 text-gray-700 font-medium">
-              Readonly
-            </div>
-          </label>
-        </div>
+        <Toggle name="disabled" @toggle-state="disabled = $event" />
+        <Toggle name="readonly" @toggle-state="readonly = $event" />
       </template>
       <template #component>
         <component
           :is="component"
           :props="[bgColor, textColor, selectedTab, disabled, readonly]"
-        ></component>
+        >
+        </component>
       </template>
     </Playground>
   </div>
@@ -73,7 +24,7 @@ export default {
   data() {
     return {
       tabs: ["normal"],
-      selectedTab: "",
+      selectedTab: "normal",
       component: "input-InputComponent",
       disabled: false,
       readonly: false,
