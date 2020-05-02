@@ -9,3 +9,7 @@
 >
 </x-componel-file>
 ```
+
+### Playground
+
+<file-FilePlayground />
