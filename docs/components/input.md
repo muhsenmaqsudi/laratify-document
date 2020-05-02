@@ -20,11 +20,4 @@ for disabling the input set `disabled` attributes, for readonly input set `reado
 <x-componel-input disabled readonly></x-componel-input>
 ```
 
-<div class="mb-3 pt-0">
-    <label class="block" for="name">
-        <span class="text-gray-700">INPUT</span>
-        <input type="text" name="input" class="form-input mt-1 block w-full"
-               id="name" value="" placeholder="test"          
-        >        
-    </label>
-</div>
+<input-InputPlayground />
