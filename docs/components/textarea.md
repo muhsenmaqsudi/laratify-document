@@ -9,3 +9,7 @@
 >
 </x-componel-textarea>
 ```
+
+### Playground
+
+<textarea-TextareaPlayground />
