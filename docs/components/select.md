@@ -22,3 +22,7 @@ if the options are an associative array, the keys are used as the labels and the
 ::: tip options with associate array
 ::options="[1 => 'option1', 2 => 'option2']"
 :::
+
+### Playground
+
+<select-SelectPlayground />

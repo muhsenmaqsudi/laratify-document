@@ -19,4 +19,6 @@ for disabling the checkbox set disabled attributes.
 checkbox attributes should have boolean migration columns.
 :::
 
+### Playground
+
 <checkbox-CheckboxPlayground />
