@@ -28,6 +28,8 @@
     "@tailwindcss/custom-forms": "^0.2.1",
     "@vuepress/plugin-back-to-top": "^1.4.1",
     "gh-pages": "^2.2.0",
+    "popper.js": "^1.16.1",
+    "vue-clickaway": "^2.2.2",
     "vuepress": "^1.4.1"
   },
   "dependencies": {

@@ -50,6 +50,7 @@ module.exports = {
           "/components/file",
           "/components/textarea",
           "/components/radios",
+          "/components/dropdown",
         ],
       },
     ],
