@@ -1,8 +1,8 @@
-name: LaravelComponel Documentation Github Page CI/CD
+name: Laravel Componel Document CI/CD
 on:
   push:
     branches:
-      - docs
+      - master
 
 jobs:
   build-test-deploy:
@@ -20,6 +20,7 @@ jobs:
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
+          repo: muhsenmaqsudi/laravel-componel
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
         env:
