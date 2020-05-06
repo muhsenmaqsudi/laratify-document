@@ -8,7 +8,7 @@
           class="w-full text-white font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 font-normal px-6 py-2 rounded outline-none focus:outline-none mr-1 mb-1 capitalize transition transition-all ease-in duration-1000"
           :class="[props[1]]"
           type="button"
-          v-on-clickaway="toggleDropdown"
+          v-on-clickaway="closeDropDown"
         >
           <div class="flex justify-around">
             <span class="px-1">Dropdown</span>
@@ -94,6 +94,9 @@ export default {
           placement: "bottom-start",
         });
       }
+    },
+    closeDropDown() {
+      this.dropdownPopoverShow = false;
     },
   },
 };
