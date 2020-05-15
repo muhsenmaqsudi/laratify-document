@@ -27,7 +27,7 @@ module.exports = {
       { text: "Components", link: "/components/" },
       {
         text: "Github",
-        link: "https://github.com/muhsenmaqsudi/laravel-componel",
+        link: "https://github.com/muhsenmaqsudi/laratify",
       },
     ],
     sidebar: [
