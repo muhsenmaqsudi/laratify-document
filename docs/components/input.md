@@ -3,7 +3,7 @@
 ### Code
 
 ```html
-<x-componel-input
+<x-laratify-input
   name="email"
   type="email"
   label="Email:"
@@ -11,7 +11,7 @@
   placeholder="Enter your email"
   :value="old('email', $data->email ?? '')"
 >
-</x-componel-input>
+</x-laratify-input>
 ```
 
 ::: tip disable & readonly
@@ -19,7 +19,7 @@ for disabling the input set `disabled` attributes, for readonly input set `reado
 :::
 
 ```html
-<x-componel-input disabled readonly></x-componel-input>
+<x-laratify-input disabled readonly></x-laratify-input>
 ```
 
 ### Playground

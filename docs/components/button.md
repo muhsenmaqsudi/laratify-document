@@ -3,9 +3,9 @@
 ### Code
 
 ```html
-<x-componel-button variant="pink-500" size="lg" outline rounded>
+<x-laratify-button variant="pink-500" size="lg" outline rounded>
   Button Title
-</x-componel-button>
+</x-laratify-button>
 ```
 
 ::: tip available button sizes

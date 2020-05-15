@@ -4,14 +4,14 @@
 
 Latest stable version: 0.1.0-alpha
 
-Detailed release notes for each version are available on [GitHub](https://github.com/muhsenmaqsudi/laravel-componel/releases) .
+Detailed release notes for each version are available on [GitHub](https://github.com/muhsenmaqsudi/laratify/releases) .
 
 ## Installing Package
 
 First `cd` into your fresh Laravel >= 7.0 installation or your existing Laravel >= 7.0 app and then install this package via the command bellow.
 
 ```
-composer require muhsenmaqsudi/laravel-componel
+composer require muhsenmaqsudi/laratify
 ```
 
 **Note: Laravel will automatically discover this package. No need to register the service provider.**
@@ -27,13 +27,13 @@ At this phase of the package we will be using TailwindCSS as our main UI Preset,
 #### without Authentication scaffolding
 
 ```
-php artisan componel:ui
+php artisan laratify:ui
 ```
 
 #### with Authentication scaffolding
 
 ```
-php artisan componel:ui --auth
+php artisan laratify:ui --auth
 ```
 
 ### Installing Preset Packages
@@ -49,6 +49,6 @@ npm install && npm run dev
 For publishing the package assets, like `config` or `views` file you can use these commands.
 
 ```
-php artisan vendor:publish --tag="componel-config"
-php artisan vendor:publish --tag="componel-views"
+php artisan vendor:publish --tag="laratify-config"
+php artisan vendor:publish --tag="laratify-views"
 ```

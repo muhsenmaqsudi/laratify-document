@@ -3,12 +3,12 @@
 ### Code
 
 ```html
-<x-componel-radios
+<x-laratify-radios
   name="option"
   :options="['option1', 'option2', 'option3']"
   :value="old('option', $data->option ?? '')"
 >
-</x-componel-radios>
+</x-laratify-radios>
 ```
 
 ::: tip options with sequential array

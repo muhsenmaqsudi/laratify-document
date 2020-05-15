@@ -1,6 +1,6 @@
 # UI Components
 
-Laravel Componel offers useful components to make building your app ui fast & easy. See below examples of each component.
+Laratify offers useful components to make building your app ui fast & easy. See below examples of each component.
 
 ## Color Palette
 

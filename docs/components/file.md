@@ -3,13 +3,13 @@
 ### Code
 
 ```html
-<x-componel-file
+<x-laratify-file
   name="avatar"
   id="upload"
   label="Upload your avatar"
   variant="indigo-500"
 >
-</x-componel-file>
+</x-laratify-file>
 ```
 
 ### Playground

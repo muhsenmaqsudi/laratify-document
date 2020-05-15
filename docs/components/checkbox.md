@@ -3,14 +3,14 @@
 ### Code
 
 ```html
-<x-componel-checkbox
+<x-laratify-checkbox
   name="terms"
   label="accept terms & conditions"
   checkbox-label="accept"
   id="terms_id"
   :value="old('terms', $data->terms ?? '')"
 >
-</x-componel-checkbox>
+</x-laratify-checkbox>
 ```
 
 ::: tip disabling

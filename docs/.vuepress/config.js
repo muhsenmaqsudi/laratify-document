@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  title: "Laravel Componel",
+  title: "Laratify",
   description: "a Laravel 7 components ui package",
-  base: "/laravel-componel/",
+  base: "/laratify/",
   configureWebpack: {
     resolve: {
       alias: {

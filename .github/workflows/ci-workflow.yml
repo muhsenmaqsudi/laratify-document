@@ -1,4 +1,4 @@
-name: Laravel Componel Document CI/CD
+name: Laratify Document CI/CD
 on:
   push:
     branches:
@@ -20,7 +20,7 @@ jobs:
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
-          repo: muhsenmaqsudi/laravel-componel
+          repo: muhsenmaqsudi/laratify
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
         env:

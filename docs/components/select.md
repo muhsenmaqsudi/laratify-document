@@ -3,14 +3,14 @@
 ### Code
 
 ```html
-<x-componel-select
+<x-laratify-select
   name="option"
   label="Option Label:"
   first-option="Select your option"
   :options="[1 => 'option1', 2 => 'option2']"
   :value="old('option', $data->option ?? '')"
 >
-</x-componel-select>
+</x-laratify-select>
 ```
 
 ::: tip options array types

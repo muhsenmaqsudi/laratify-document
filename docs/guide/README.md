@@ -1,6 +1,6 @@
 # Introduction
 
-Laravel Componel is a Laravel 7 package which includes essential components to make creating forms, table and custom ui's for your laravel blade base application a breeze. \
+Laratify is a Laravel 7 package which includes essential components to make creating forms, table and custom ui's for your laravel blade base application a breeze. \
 
 ::: warning
 **This package requires Laravel >= 7.0 & PHP >= 7.2.5 **

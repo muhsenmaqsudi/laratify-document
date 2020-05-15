@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: Laravel Componel
+heroText: Laratify
 tagline: a Laravel 7 Components UI Package
 actionText: Get Started →
 actionLink: /guide/
